@@ -1,0 +1,2 @@
+# TUGAS_JAVA
+FAKE BOT
