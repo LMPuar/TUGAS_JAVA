@@ -1,0 +1,81 @@
+*, html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+.wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    min-width: 325px;
+    min-height: 100vh;
+}
+
+.content {
+    margin: 8px;
+}
+.input {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+button {
+    border: none;
+    background-color: aqua;
+    font-size: 24px;
+    padding: 18px;
+    margin-left: 10px;
+    height: 67px;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #06fb17;
+    transition: 0.5s all ease-in-out;
+}
+input {
+    border: none;
+    background-color: rgba(221, 207, 207, 0.609);
+    color: black;
+    padding: 18px;
+    font-size: 25px;
+    margin-top: 10px;
+
+}
+
+#pertanyaan {
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+#loading {
+    display: none;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    border-top: 20px solid rgb(43, 0, 255);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 9;
+    animation: 1s spin infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
